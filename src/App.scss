@@ -1,6 +1,26 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  // padding: 2rem;
   text-align: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+
+  nav {
+
+    a {
+      text-decoration: none;
+      padding: 0 10px;
+      font-weight: 500;
+      color: #FF6060;
+      font-size: 24px;
+    }
+  }
+
 }

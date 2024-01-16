@@ -1,0 +1,29 @@
+div.banner-container {
+    height: 223px;
+    width: 100%;
+    margin: 20px 0;
+
+    div.banner {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            position: absolute;
+            margin: 200px 0 0 0;
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 500;
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+    }
+}

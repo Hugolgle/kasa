@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.scss'
 import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'react-router-dom'
+import Home from './pages/Home/home.jsx'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +11,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'home',
-        element: <div>Accueil</div>
+        element: <Home />
       },
       {
         path: 'about',
@@ -31,6 +30,7 @@ function PageError() {
 function Root() {
   return <>
     <header>
+      <img src="./src/assets/images/logo.png" alt="logo" />
       <nav>
         <NavLink to="/home">Accueil</NavLink>
         <NavLink to="/about">A propos</NavLink>
