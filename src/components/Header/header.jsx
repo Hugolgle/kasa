@@ -7,7 +7,7 @@ export default function Header() {
         <header>
             <img src="./src/assets/images/logo.png" alt="logo" />
             <nav>
-                <NavLink to="/home">Accueil</NavLink>
+                <NavLink to="/">Accueil</NavLink>
                 <NavLink to="/about">A propos</NavLink>
             </nav>
         </header>

@@ -1,0 +1,38 @@
+div.collapse-container {
+    width: 80%;
+    color: #fff;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    margin: 10px 0;
+
+    .collapse-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FF6060;
+        padding: 0px 20px;
+        border-radius: 5px;
+
+        h2 {
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 32px;
+        }
+
+        i:hover {
+            cursor: pointer;
+        }
+    }
+
+    .collapse-txt {
+        color: #000;
+        padding: 0px 20px;
+
+        p {
+            text-align: left;
+            color: #FF6060;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+div.container-logement {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 50px;
+    border-radius: 40px;
+}

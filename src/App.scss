@@ -21,6 +21,10 @@ header {
       color: #FF6060;
       font-size: 24px;
     }
+
+    a.active {
+      text-decoration: underline;
+    }
   }
 
 }

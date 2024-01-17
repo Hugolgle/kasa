@@ -3,7 +3,21 @@ div.banner-container {
     width: 100%;
     margin: 20px 0;
 
-    div.banner {
+    div.banner-img {
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 25px;
+            filter: brightness(70%);
+        }
+    }
+
+    div.banner-title {
         width: 100%;
         text-align: center;
         display: flex;
@@ -12,18 +26,10 @@ div.banner-container {
 
         h1 {
             position: absolute;
-            margin: 200px 0 0 0;
             color: #ffffff;
             font-size: 48px;
             font-weight: 500;
+            margin-bottom: 250px;
         }
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 25px;
     }
 }

@@ -2,43 +2,28 @@ import { useState } from 'react'
 import './App.scss'
 import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'react-router-dom'
 import Home from './pages/Home/home.jsx'
+import About from './pages/About/about.jsx'
+import PageError from './pages/Error/error.jsx'
+import Header from './components/Header/header.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Root />,
+    // path: '/',
+    element: <Header />,
     errorElement: <PageError />,
     children: [
       {
-        path: 'home',
+        path: '/',
         element: <Home />
       },
       {
         path: 'about',
-        element: <div>A propos</div>
+        element: <About />
       }
     ]
   }
 ])
 
-function PageError() {
-  return <>
-    <h1>Une erreur est survenue !</h1>
-  </>
-}
-
-function Root() {
-  return <>
-    <header>
-      <img src="./src/assets/images/logo.png" alt="logo" />
-      <nav>
-        <NavLink to="/home">Accueil</NavLink>
-        <NavLink to="/about">A propos</NavLink>
-      </nav>
-    </header>
-    <div className='container my-4'><Outlet /></div >
-  </>
-}
 
 function App() {
   return <RouterProvider router={router} />
