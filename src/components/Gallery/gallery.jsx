@@ -4,7 +4,7 @@ import Card from '../Card/card'
 
 export default function Gallery() {
     return (
-        <div class="container-logement">
+        <div className="container-logement">
             {
                 logements.map((logement) => {
                     return (

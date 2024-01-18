@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.scss'
 import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'react-router-dom'
 import Home from './pages/Home/home.jsx'
