@@ -6,12 +6,47 @@ div.collapse-container {
     margin: 10px 0;
 
     .collapse-title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #FF6060;
-        padding: 0px 20px;
-        border-radius: 5px;
+        position: relative;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FF6060;
+            padding: 0px 20px;
+            border-radius: 5px;
+            height: 70px;
+        }
+
+
+        .collapse-txt {
+            color: #000;
+            padding: 15px;
+            max-height: 180px;
+            opacity: 1;
+            transition: 1s cubic-bezier(.73, .31, .18, .79);
+            overflow: hidden;
+
+            p {
+                text-align: left;
+                color: #FF6060;
+                margin: 0;
+            }
+        }
+
+        .collapse-txt-hidden {
+            opacity: 0;
+            padding: 0 15px;
+            transition: 1s cubic-bezier(.73, .31, .18, .79);
+            max-height: 0;
+            overflow: hidden;
+
+            p {
+                text-align: left;
+                color: #FF6060;
+                margin: 0;
+            }
+        }
 
         h2 {
             font-weight: 500;
@@ -52,17 +87,5 @@ div.collapse-container {
         cursor: pointer;
     }
 
-    .collapse-txt {
-        color: #000;
-        padding: 0px 20px;
 
-        p {
-            text-align: left;
-            color: #FF6060;
-        }
-    }
-
-    .collapse-txt-hidden {
-        display: none;
-    }
 }
