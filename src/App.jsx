@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'reac
 import Home from './pages/Home/home.jsx'
 import About from './pages/About/about.jsx'
 import PageError from './pages/PageError/pageError.jsx'
+import Logement from './pages/Logement/logement.jsx'
 import Header from './components/Header/header.jsx'
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'logement/:id',
+        element: <Logement />
       }
     ]
   }

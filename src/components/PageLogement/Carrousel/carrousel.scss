@@ -1,0 +1,14 @@
+div.containerCarrousel {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    background-color: rgb(82, 117, 117);
+    border-radius: 25px;
+    overflow: hidden;
+
+    img.imageCarrousel {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+    }
+}

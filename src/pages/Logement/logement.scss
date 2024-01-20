@@ -1,0 +1,33 @@
+section.details {
+    padding: 20px 0;
+    width: 100%;
+
+    div.locHost {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    div.tagsRate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    div.collapses {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+
+        div.collapse-container {
+            width: 41%;
+            color: #fff;
+            background-color: #F6F6F6;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    }
+}
