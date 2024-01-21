@@ -1,17 +1,15 @@
 @import '../../../main.scss';
 
 div.containerRates {
-    color: $color-secondary;
+    font-size: 36px;
     font-weight: 500;
     display: flex;
 
-    h3 {
-        font-size: 36px;
-        margin: 0;
+    i.red {
+        color: $color-secondary;
     }
 
-    p {
-        margin: 0;
-        font-size: 18px;
+    i.grey {
+        color: #E3E3E3;
     }
 }

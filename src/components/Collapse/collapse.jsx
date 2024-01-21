@@ -18,8 +18,8 @@ export default function Collapse(props) {
 
             <div className={toggle ? 'collapse-txt' : 'collapse-txt-hidden'}>
                 <p>{props.text}</p>
+                {props.textEquipement}
             </div>
-
         </div>
     )
 }

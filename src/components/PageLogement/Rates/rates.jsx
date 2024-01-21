@@ -1,18 +1,17 @@
 import './rates.scss'
-import { useParams } from "react-router-dom";
 
-import logements from '../../../../public/logements.json'
+export default function Rates(props) {
 
-export default function Rates() {
-    const { id } = useParams();
-
-    const ficheLogement = logements.find((logement) => logement.id === id);
-
-
-    return <>
+    const nbStars = [1, 2, 3, 4, 5];
+    return (
         <div className="containerRates">
-            <i className="fa-solid fa-star"></i>
-            <h3>{ficheLogement.rating}</h3>
+            {nbStars.map((star) =>
+                props.rating >= star ? (
+                    <i className="fa-solid fa-star red"></i>
+                ) : (
+                    <i className="fa-solid fa-star grey"></i>
+                )
+            )}
         </div>
-    </>
+    );
 }
