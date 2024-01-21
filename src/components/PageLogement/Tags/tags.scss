@@ -1,13 +1,14 @@
+@import '../../../main.scss';
+
 div.containerTags {
-    display: flex;
-    justify-content: space-between;
+    @include display(flex, row, space-between, center);
 
     p {
         margin: 0;
         font-size: 18px;
         padding: 10px 30px;
-        background-color: #FF6060;
-        color: #fff;
+        background-color: $color-secondary;
+        color: $color-primary;
         border-radius: 35px;
         margin-right: 15px;
     }

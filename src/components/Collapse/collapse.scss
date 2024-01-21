@@ -1,15 +1,16 @@
+@import '../../main.scss';
+
 .collapse {
-    background-color: #F6F6F6;
+    background-color: $color-tertiary;
     max-width: 1100px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
 
     .title {
-        display: flex;
-        justify-content: space-between;
-        background-color: #FF6060;
-        color: #FFFFFF;
+        @include display(flex, row, space-between, center);
+        background-color: $color-secondary;
+        color: $color-primary;
         border-radius: 10px;
         font-weight: 500;
         font-size: 18px;
@@ -45,7 +46,7 @@
 
         p {
             text-align: left;
-            color: #FF6060;
+            color: $color-secondary;
             margin: 0;
         }
     }
@@ -59,7 +60,7 @@
 
         p {
             text-align: left;
-            color: #FF6060;
+            color: $color-secondary;
             margin: 0;
         }
     }

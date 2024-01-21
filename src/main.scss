@@ -8,3 +8,14 @@
 body {
     margin: 0;
 }
+
+$color-primary : #fff;
+$color-secondary : #FF6060;
+$color-tertiary : #F6F6F6;
+
+@mixin display($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

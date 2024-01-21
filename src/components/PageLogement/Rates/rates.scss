@@ -1,5 +1,7 @@
+@import '../../../main.scss';
+
 div.containerRates {
-    color: #FF6060;
+    color: $color-secondary;
     font-weight: 500;
     display: flex;
 

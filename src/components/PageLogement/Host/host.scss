@@ -1,13 +1,13 @@
+@import '../../../main.scss';
+
 div.containerHost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display(flex, row, space-between, center);
 
     p {
         margin-right: 10px;
         font-weight: 500;
         font-size: 18px;
-        color: #FF6060;
+        color: $color-secondary;
         text-align: right;
         max-width: 100px;
     }

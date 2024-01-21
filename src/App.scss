@@ -1,3 +1,5 @@
+@import './main.scss';
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -7,9 +9,7 @@
 
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include display(flex, row, space-between, center);
   margin: 20px 0;
 
   nav {
@@ -18,7 +18,7 @@ header {
       text-decoration: none;
       padding: 0 10px;
       font-weight: 500;
-      color: #FF6060;
+      color: $color-secondary;
       font-size: 24px;
     }
 
