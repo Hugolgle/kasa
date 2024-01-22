@@ -1,8 +1,10 @@
+@import '../../../main.scss';
+
 div.containerCarrousel {
     position: relative;
     width: 100%;
     height: 415px;
-    background-color: rgb(82, 117, 117);
+    // background-color: rgb(82, 117, 117);
     border-radius: 25px;
     overflow: hidden;
 
@@ -10,5 +12,32 @@ div.containerCarrousel {
         width: 100%;
         height: 415px;
         object-fit: cover;
+        transition: 1s;
+    }
+
+    div.arrow {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateY(200%);
+        padding: 0 25px;
+        @include display(flex, row, space-between, center);
+
+        img {
+            cursor: pointer;
+        }
+
+    }
+
+    div.indice {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: $color-primary;
+        }
     }
 }
