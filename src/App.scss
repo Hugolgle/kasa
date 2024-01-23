@@ -12,6 +12,12 @@ header {
   @include display(flex, row, space-between, center);
   margin: 20px 0;
 
+  img {
+    @media screen and (max-width: 650px) {
+      width: 145px;
+    }
+  }
+
   nav {
 
     a {
@@ -20,11 +26,26 @@ header {
       font-weight: 500;
       color: $color-secondary;
       font-size: 24px;
+
+      @media screen and (max-width: 650px) {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0;
+        margin-left: 25px;
+      }
     }
 
     a.active {
       text-decoration: underline;
     }
+  }
+
+  @media screen and (max-width: 1350px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 0 15px;
   }
 
 }

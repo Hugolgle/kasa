@@ -4,6 +4,8 @@ div.banner-container {
     height: 223px;
     width: 100%;
     margin: 20px 0;
+    position: relative;
+    @include display(flex, row, center, center);
 
     div.banner-img {
         height: 100%;
@@ -16,22 +18,60 @@ div.banner-container {
             object-position: center;
             border-radius: 25px;
             filter: brightness(70%);
+
+            @media screen and (max-width: 1350px) {
+                border-radius: 15px;
+            }
+
+            @media screen and (max-width: 650px) {
+                border-radius: 10px;
+            }
         }
     }
 
     div.banner-title {
         width: 100%;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display(flex, row, center, center);
+        position: absolute;
 
         h1 {
             position: absolute;
             color: $color-primary;
             font-size: 48px;
             font-weight: 500;
-            margin-bottom: 250px;
+            width: 100%;
+
+            @media screen and (max-width: 1350px) {
+                font-size: 36px;
+            }
+
+
+            @media screen and (max-width: 650px) {
+                font-size: 24px;
+                line-height: 24px;
+                width: 217px;
+                margin-left: 15px;
+            }
         }
+
+        @media screen and (max-width: 1350px) {}
+
+
+        @media screen and (max-width: 650px) {
+            text-align: left;
+            @include display(flex, row, start, center);
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1350px) {
+        padding: 0 50px;
+    }
+
+
+    @media screen and (max-width: 650px) {
+        height: 111px;
+        padding: 0 15px;
     }
 }

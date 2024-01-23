@@ -1,9 +1,13 @@
 @import '../../../main.scss';
 
 div.containerRates {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
     display: flex;
+
+    i {
+        margin-left: 10px;
+    }
 
     i.red {
         color: $color-secondary;
