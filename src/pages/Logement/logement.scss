@@ -4,15 +4,40 @@ section.details {
     padding: 20px 0;
     width: 100%;
 
-    div.locHost {
+    div.infos {
         @include display(flex, row, space-between, center);
-        padding: 20px 0;
+
+        div.locTag {
+            @include display(flex, column, space-between, start);
+            padding: 10px 0;
+            gap: 20px;
+
+            @media screen and (max-width: 650px) {
+                @include display(flex, column, space-between, start);
+                padding: 0;
+
+            }
+        }
+
+        div.hostRate {
+            @include display(flex, column, space-between, center);
+            padding: 10px 0;
+            gap: 20px;
+
+            @media screen and (max-width: 650px) {
+                @include display(flex, row-reverse, space-between, center);
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            @include display(flex, column, space-between, start);
+            padding: 0 15px;
+        }
     }
 
-    div.tagsRate {
-        @include display(flex, row, space-between, center);
-        padding: 20px 0;
-    }
+
 
     div.collapses {
         @include display(flex, row, space-evenly, center);

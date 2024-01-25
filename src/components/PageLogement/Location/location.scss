@@ -10,10 +10,19 @@ div.containerLocation {
     h3 {
         font-size: 36px;
         margin: 0;
+        font-weight: 500;
+
+        @media screen and (max-width: 650px) {
+            font-size: 18px;
+        }
     }
 
     p {
         margin: 0;
         font-size: 18px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 14px;
+        }
     }
 }

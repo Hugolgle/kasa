@@ -22,16 +22,19 @@ export default function Logement() {
     })
 
     return <>
-        <Carrousel />
+        <Carrousel pictures={ficheLogement.pictures} />
         <section className="details">
-            <div className="locHost">
-                <Location />
-                <Host />
+            <div className="infos">
+                <div className="locTag">
+                    <Location />
+                    <Tag tags={ficheLogement.tags} />
+                </div>
+                <div className="hostRate">
+                    <Host />
+                    <Rate rating={ficheLogement.rating} />
+                </div>
             </div>
-            <div className="tagsRate">
-                <Tag />
-                <Rate rating={ficheLogement.rating} />
-            </div>
+
             <div className="logementCollapseContainer">
                 <div className="logementCollapse">
                     <Collapses title="Description" text={ficheLogement.description} />

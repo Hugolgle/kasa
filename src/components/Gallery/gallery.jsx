@@ -1,17 +1,16 @@
 import './gallery.scss'
-import logements from '../../../public/logements.json'
 import Card from '../Card/card'
-import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-export default function Gallery() {
+export default function Gallery(props) {
     return (
         <div className="container-logement">
             {
-                logements.map((logement) => {
+                props.cards.map((card) => {
                     return <>
-                        <Link to={`/logement/${logement.id}`}>
-                            <Card image={logement.cover} name={logement.title} />
+                        <Link to={`/logement/${card.id}`} key={card.id}>
+                            <Card image={card.cover} name={card.title} />
                         </Link >
                     </>
 

@@ -5,8 +5,17 @@ div.containerRates {
     font-weight: 500;
     display: flex;
 
+    @media screen and (max-width: 650px) {
+        font-size: 13px;
+    }
+
     i {
         margin-left: 10px;
+
+        @media screen and (max-width: 650px) {
+            margin-right: 10px;
+            margin-left: 0;
+        }
     }
 
     i.red {

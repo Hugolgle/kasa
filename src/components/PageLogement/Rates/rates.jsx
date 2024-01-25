@@ -7,9 +7,9 @@ export default function Rates(props) {
         <div className="containerRates">
             {nbStars.map((star) =>
                 props.rating >= star ? (
-                    <i className="fa-solid fa-star red"></i>
+                    <i className="fa-solid fa-star red" key={star}></i>
                 ) : (
-                    <i className="fa-solid fa-star grey"></i>
+                    <i className="fa-solid fa-star grey" key={star}></i>
                 )
             )}
         </div>

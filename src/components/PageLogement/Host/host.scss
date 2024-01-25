@@ -10,6 +10,10 @@ div.containerHost {
         color: $color-secondary;
         text-align: right;
         max-width: 100px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 12px;
+        }
     }
 
     img {
@@ -17,5 +21,11 @@ div.containerHost {
         width: 64px;
         object-position: center;
         border-radius: 50px;
+
+        @media screen and (max-width: 650px) {
+            width: 32px;
+        }
     }
+
+
 }

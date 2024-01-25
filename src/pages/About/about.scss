@@ -4,4 +4,16 @@ section.collapses {
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: 1350px) {
+        padding: 0 50px;
+        gap: 25px;
+    }
+
+
+    @media screen and (max-width: 650px) {
+        gap: 25px;
+        padding: 0 15px;
+        font-size: 13px;
+    }
 }

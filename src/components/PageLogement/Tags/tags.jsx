@@ -1,17 +1,13 @@
 import './tags.scss'
-import { useParams } from "react-router-dom";
 
-import logements from '../../../../public/logements.json'
 
-export default function Location() {
-    const { id } = useParams();
+export default function tag(props) {
 
-    const ficheLogement = logements.find((logement) => logement.id === id);
 
-    const tag = ficheLogement.tags.map((tag) => {
-        return <>
-            <p>{tag}</p>
-        </>
+    const tag = props.tags.map((tag) => {
+        return (
+            <p key={tag}>{tag}</p>
+        )
 
     })
     return <>

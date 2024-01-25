@@ -25,14 +25,22 @@
         i.arrow {
             font-size: 32px;
             transition: .3s;
+
+            @media screen and (max-width: 650px) {
+                font-size: 18px;
+            }
         }
 
         i.arrow-up {
-            transform: rotate(0deg);
+            transform: rotate(180deg);
         }
 
         i.arrow-down {
-            transform: rotate(180deg);
+            transform: rotate(0);
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 13px;
         }
     }
 
@@ -70,10 +78,22 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
-    margin: 30px auto;
-    width: 95%;
+    margin: 30px 0;
+    width: 100%;
 
     .logementCollapse {
         width: 50%;
+
+        @media screen and (max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 15px;
+        margin: 15px 0;
     }
 }
