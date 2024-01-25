@@ -31,6 +31,11 @@ section.details {
             }
         }
 
+
+        @media screen and (max-width: 1350px) {
+            padding: 0 15px;
+        }
+
         @media screen and (max-width: 650px) {
             @include display(flex, column, space-between, start);
             padding: 0 15px;

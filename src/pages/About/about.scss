@@ -1,8 +1,7 @@
+@import '../../main.scss';
+
 section.collapses {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include display(flex, column, center, center);
     gap: 30px;
 
     @media screen and (max-width: 1350px) {

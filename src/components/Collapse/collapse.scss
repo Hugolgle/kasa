@@ -75,8 +75,7 @@
 }
 
 .logementCollapseContainer {
-    display: flex;
-    justify-content: space-between;
+    @include display(flex, row, space-between, center);
     gap: 70px;
     margin: 30px 0;
     width: 100%;
@@ -89,9 +88,12 @@
         }
     }
 
+    @media screen and (max-width: 1350px) {
+        padding: 0 15px;
+    }
+
     @media screen and (max-width: 650px) {
-        display: flex;
-        flex-direction: column;
+        @include display(flex, column, center, center);
         gap: 25px;
         padding: 0 15px;
         margin: 15px 0;
