@@ -1,5 +1,5 @@
 import './App.scss'
-import { RouterProvider, createBrowserRouter, NavLink, Link, Outlet } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home/home.jsx'
 import About from './pages/About/about.jsx'
 import PageError from './pages/PageError/pageError.jsx'
@@ -8,7 +8,6 @@ import Header from './components/Header/header.jsx'
 
 const router = createBrowserRouter([
   {
-    // path: '/',
     element: <Header />,
     errorElement: <PageError />,
     children: [

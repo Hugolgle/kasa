@@ -13,17 +13,12 @@ export default function Logement() {
 
     const { id } = useParams();
     const ficheLogement = logements.find((logement) => logement.id === id);
-    const equipement = ficheLogement.equipments.map((equipement) => {
-        return <>
-            <p>{equipement}</p>{"\n"}
-        </>
-
-
-    })
+    const equipement = ficheLogement.equipments.map((equipement) => <p key={equipement}>{equipement}</p>)
 
     return <>
         <Carrousel pictures={ficheLogement.pictures} />
         <section className="details">
+
             <div className="infos">
                 <div className="locTag">
                     <Location />
@@ -37,7 +32,7 @@ export default function Logement() {
 
             <div className="logementCollapseContainer">
                 <div className="logementCollapse">
-                    <Collapses title="Description" text={ficheLogement.description} />
+                    <Collapses title="Description" text={<p>{ficheLogement.description}</p>} />
                 </div>
                 <div className="logementCollapse">
                     <Collapses title="Equipement" text={equipement} />

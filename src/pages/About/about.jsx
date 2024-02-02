@@ -11,10 +11,9 @@ export default function About() {
             {
                 collapses.map((collapse) => {
                     return (
-                        <div className="aboutCollapseContainer">
-                            <Collapse title={collapse.title} text={collapse.text} />
+                        <div className="aboutCollapseContainer" key={collapse.id}>
+                            <Collapse title={collapse.title} text={<p>{collapse.text}</p>} />
                         </div>
-
                     )
                 })
             }

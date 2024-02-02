@@ -7,15 +7,13 @@ export default function Gallery(props) {
     return (
         <div className="container-logement">
             {
-                props.cards.map((card) => {
-                    return <>
-                        <Link to={`/logement/${card.id}`} key={card.id}>
-                            <Card image={card.cover} name={card.title} />
-                        </Link >
-                    </>
+                props.cards.map((card) =>
 
+                    <Link to={`/logement/${card.id}`} key={card.id} >
+                        <Card image={card.cover} name={card.title} />
+                    </Link >
 
-                })}
+                )}
         </div >
     )
 }
